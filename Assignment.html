@@ -1,0 +1,1717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noey</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <link
+      href="https://fonts.google.com/specimen/Courier+Prime?sidebar.open=true&selection.family=Courier+Prime:ital,wght@1,700"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <canvas id='myCanvas' width="1920" height="1080"></canvas>
+    <script type="text/javascript">
+        var ctx = document.getElementById('myCanvas').getContext('2d')
+        var layer1 = document.getElementById('myCanvas').getContext('2d')
+        var layer2 = document.getElementById('myCanvas').getContext('2d')
+        var layer3 = document.getElementById('myCanvas').getContext('2d')
+        
+        ctx.beginPath();
+        ctx.moveTo(0,0);
+        ctx.lineTo(0, 1080);
+        ctx.lineTo(1920, 1080);
+        ctx.lineTo(1920, 0);
+        ctx.fillStyle = 'rgba(0, 0, 51, 1)';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.font = "50px Courier Prime";
+        ctx.fillStyle = "white";
+        ctx.textAlign = "center";
+        ctx.fillText("Castle Vallentica", 300, 100);
+
+        ctx.font = "10px Courier Prime";
+        ctx.fillStyle = "white";
+        ctx.textAlign = "right";
+        ctx.fillText("Natnicha Titun 632110025 Section 001", 300, 120);
+        
+        
+
+        ctx.beginPath();
+        ctx.arc(500, 300, 100, 0, 2*Math.PI, 0);
+        ctx.fillStyle = 'rgba(255, 255, 153, 1)';
+        ctx.fill();
+        ///พระจันทร์เสี้ยว
+        ctx.beginPath();
+        ctx.arc(450, 300, 100, 0, 2*Math.PI, 0);
+        ctx.fillStyle = 'rgba(0, 0, 51, 1)';
+        ctx.fill();
+
+
+        ctx.beginPath();
+        ctx.moveTo(780, 700);
+        ctx.lineTo(1110, 700);
+        ctx.lineTo(1110, 300);
+        ctx.lineTo(780, 300);
+        ctx.fillStyle = '#E3E3DD';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(1000, 300);
+        ctx.bezierCurveTo(1110, 300, 1100, 400, 1110, 400);
+        ctx.lineTo(1110, 300);
+        ctx.fillStyle = 'rgba(0, 0, 0, 0.2)';
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0)';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(800, 300);
+        ctx.bezierCurveTo(1110, 300, 1100, 400, 1110, 400);
+        ctx.lineTo(1110, 300);
+        ctx.fillStyle = 'rgba(0, 0, 0, 0.2)';
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0)';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(700, 300);
+        ctx.lineTo(1190, 300);
+        ctx.lineTo(1190, 250);
+        ctx.lineTo(700, 250);
+        ctx.fillStyle = '#E3E3DD';
+        ctx.fill();
+        ctx.stroke();
+
+
+
+        ctx.beginPath();
+        ctx.moveTo(750, 250);
+        ctx.lineTo(1140, 250);
+        ctx.lineTo(945, 100);
+        ctx.fillStyle = 'rgb(26, 126, 92)';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(853, 200, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(950, 150, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(950, 265, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = 'rgba(255, 255, 153, 1)'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(850, 265, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = 'rgba(255, 255, 153, 1)'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(750, 265, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = 'rgba(255, 255, 153, 1)'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(1050, 265, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = 'rgba(255, 255, 153, 1)'
+        ctx.fill();
+
+        /**ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(940, 215, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+        **/
+
+        ctx.beginPath();
+        ctx.arc(945, 405, 80, 0, 2*Math.PI, 0);
+        ctx.fillStyle = 'rgba(0, 255, 98, 1)';
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(945, 405, 70, 0, 2*Math.PI, 0);
+        ctx.fillStyle = 'rgba(255, 255, 153, 1)';
+        ctx.fill();
+
+       
+
+        
+
+
+        ctx.beginPath();
+        ctx.arc(945, 405, 10, 0, 2*Math.PI, 0);
+        ctx.lineWidth = "1";
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.05)';
+        ctx.fillStyle = 'black';
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.moveTo(940, 405);
+        ctx.lineTo(950, 405);
+        ctx.lineTo(945, 350);
+        ctx.fillStyle = 'black'
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(950, 400);
+        ctx.lineTo(950, 410);
+        ctx.lineTo(1000, 405);
+        ctx.fillStyle = 'black'
+        ctx.fill();
+        ctx.stroke();
+
+        
+
+
+
+        ///สี่เหลี่ยมฐาน
+        ctx.beginPath();
+        ctx.moveTo(1080, 540);
+        ctx.lineTo(1080, 1000);
+        ctx.lineTo(810, 1000);
+        ctx.lineTo(810, 540);
+        ctx.lineTo(1080, 540);
+        ctx.fillStyle = '#A1CFF8';
+        ctx.fill();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.05)'
+        ctx.stroke();
+        //บล็อคอิฐ
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(813, 695, 48, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(865, 695, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(920, 695, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(975, 695, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(1030, 695, 45, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+        //แยกชั้น
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(813, 720, 30, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(848, 720, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(903, 720, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(958, 720, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(1013, 720, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(1068, 720, 7, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+        //แยกชั้น
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(813, 745, 48, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(865, 745, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(920, 745, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(975, 745, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(1030, 745, 45, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+        //split
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(813, 770, 30, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(848, 770, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(903, 770, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(958, 770, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(1013, 770, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(1068, 770, 7, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+        //แยกชั้น
+        //แยกชั้น
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(813, 795, 48, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(865, 795, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(920, 795, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(975, 795, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(1030, 795, 45, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+        //split
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(813, 820, 30, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(848, 820, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(903, 820, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(958, 820, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(1013, 820, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(1068, 820, 7, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+        //split
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(813, 845, 48, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(865, 845, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(920, 845, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(975, 845, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(1030, 845, 45, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+        //split
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(813, 870, 30, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(848, 870, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(903, 870, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(958, 870, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(1013, 870, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(1068, 870, 7, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+        ///split
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(813, 895, 48, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(865, 895, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(920, 895, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(975, 895, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(1030, 895, 45, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+        //split
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(813, 920, 30, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(848, 920, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(903, 920, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(958, 920, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(1013, 920, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(1068, 920, 7, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+        //split
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(813, 945, 48, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(865, 945, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(920, 945, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(975, 945, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(1030, 945, 45, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+        //split
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(813, 970, 30, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(848, 970, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(903, 970, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(958, 970, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(1013, 970, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(1068, 970, 7, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+        //split
+
+        ///บล็อคปราสาท หรือสี่เหลี่ยมเล็กๆ
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0)';
+        ctx.moveTo(810, 540);
+        ctx.lineTo(840, 540);
+        ctx.lineTo(840,510);
+        ctx.lineTo(810,510);
+        ctx.lineTo(810,540);
+        ctx.fillStyle= '#F1C40F';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(840, 530, 30, 10);
+        ctx.fillStyle = '#F1C40F';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(870, 540);
+        ctx.lineTo(900, 540);
+        ctx.lineTo(900,510);
+        ctx.lineTo(870,510);
+        ctx.lineTo(870,540);
+        ctx.fillStyle= '#F1C40F';
+        ctx.fill();
+        ctx.stroke();    
+        
+        ctx.beginPath();
+        ctx.rect(900, 530, 30, 10);
+        ctx.fillStyle = '#F1C40F';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(930, 540);
+        ctx.lineTo(960, 540);
+        ctx.lineTo(960,510);
+        ctx.lineTo(930,510);
+        ctx.lineTo(930,540);
+        ctx.fillStyle= '#F1C40F';
+        ctx.fill();
+        ctx.stroke();
+       
+        ctx.beginPath();
+        ctx.rect(960, 530, 30, 10);
+        ctx.fillStyle = '#F1C40F';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(990, 540);
+        ctx.lineTo(1020, 540);
+        ctx.lineTo(1020,510);
+        ctx.lineTo(990,510);
+        ctx.lineTo(990,540);
+        ctx.fillStyle= '#F1C40F';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(1020, 530, 30, 10);
+        ctx.fillStyle = '#F1C40F';
+        ctx.fill();
+        ctx.stroke();
+        
+        ctx.beginPath();
+        ctx.moveTo(1050, 540);
+        ctx.lineTo(1080, 540);
+        ctx.lineTo(1080,510);
+        ctx.lineTo(1050,510);
+        ctx.lineTo(1050,540);
+        ctx.fillStyle= '#F1C40F';
+        ctx.fill();
+        ctx.stroke(); 
+        ///สี่เหลี่ยมเล็กทำถึงบรรทัด 75
+        ///สี่เหลี่ยมด้านข้าง ข้างซ้าย
+        ctx.beginPath();
+        ctx.lineWidth = '10'
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.05)';
+        ctx.moveTo(810, 500);
+        ctx.lineTo(810, 1000);
+        ctx.lineTo(710, 1000);
+        ctx.lineTo(710, 500);
+        ctx.lineTo(810, 500);
+        ctx.fillStyle = '#D4E6F1';
+        ctx.fill();
+        ctx.stroke();
+        ///สี่เหลี่ยมด้านข้างด้านขวา
+        ctx.beginPath();
+        ctx.moveTo(1080, 500);
+        ctx.lineTo(1080, 1000);
+        ctx.lineTo(1180, 1000);
+        ctx.lineTo(1180, 500);
+        ctx.lineTo(1080, 500);
+        ctx.fillStyle = '#D4E6F1';
+        ctx.fill();
+        ctx.stroke();
+        ///สามเหลี่ยมซ้าย
+        ctx.beginPath();
+        ctx.moveTo(810, 500);
+        ctx.lineTo(760, 450);
+        ctx.lineTo(710, 500);
+        ctx.fillStyle = '#D4E6F1';
+        ctx.fill();
+        ctx.stroke();
+        ///สามเหลี่ยมขวา
+        ctx.beginPath();
+        ctx.moveTo(1080, 500);
+        ctx.lineTo(1130, 450);
+        ctx.lineTo(1180, 500);
+        ctx.fillStyle = '#D4E6F1';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.lineWidth = '1'
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.01)';
+        ctx.rect(1080, 500, 100, 10);
+        ctx.fillStyle= '#F1C40F';
+        ctx.fill();
+        ctx.stroke();
+
+
+        ctx.beginPath();
+        ctx.lineWidth = '1'
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.01)';
+        ctx.rect(1080, 600, 100, 10);
+        ctx.fillStyle= '#F1C40F';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(710, 500, 100, 10);
+        ctx.fillStyle= '#F1C40F';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(710, 600, 100, 10);
+        ctx.fillStyle= '#F1C40F';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(730, 540, 20, 30);
+        ctx.fillStyle= 'black';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(770, 540, 20, 30);
+        ctx.fillStyle= 'black';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(1100, 540, 20, 30);
+        ctx.fillStyle= 'black';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(1140, 540, 20, 30);
+        ctx.fillStyle= 'black';
+        ctx.fill();
+        ctx.stroke();
+
+        ///วงกลม
+        layer1.beginPath();
+        ctx.lineWidth = '1'
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.05)';
+        layer1.arc(945, 800, 100, 0, 1 * Math.PI, 1);
+        layer1.stroke();
+        layer1.fillStyle = 'rgba(255, 204, 204, 1)';
+        layer1.fill();
+        ///ประตู
+        layer1.beginPath();
+        layer1.moveTo(845, 800);
+        layer1.lineTo(895, 1000);
+        layer1.lineTo(995, 1000);
+        layer1.lineTo(1045, 800);
+        layer1.lineTo(895, 800);
+        layer1.fillStyle = "rgba(255, 204, 204, 1)";
+        layer1.fill();
+        layer1.stroke();
+
+        layer2.beginPath();
+        layer2.moveTo(940, 1000);
+        layer2.lineTo(945, 1000);
+        layer2.lineTo(945, 800);
+        layer2.lineTo(940, 1000);
+        layer2.fillStyle = 'rgba(0, 0, 0, 1)';
+        layer2.fill();
+        layer2.stroke();
+
+        layer2.beginPath();
+        layer2.moveTo(830, 800);
+        layer2.lineTo(845, 815);
+        layer2.lineTo(1045, 815);
+        layer2.lineTo(1060, 800);
+        layer2.fillStyle = 'rgba(255, 255, 153, 1)';
+        layer2.fill();
+        layer2.stroke();
+        
+        layer2.beginPath();
+        layer2.moveTo(830, 805);
+        layer2.lineTo(845, 810);
+        layer2.lineTo(1045, 810);
+        layer2.lineTo(1060, 805);
+        layer2.fillStyle = 'rgba(201, 201, 15, 1)';
+        layer2.fill();
+        layer2.stroke();
+
+
+        ctx.beginPath();
+        ctx.moveTo(900, 510);
+        ctx.lineTo(800, 510);
+        ctx.lineTo(800, 510);
+    
+
+        ///สี่เหลี่ยมขวา
+        ctx.beginPath();
+        ctx.moveTo(1180,700);
+        ctx.lineTo(1500,700);
+        ctx.lineTo(1500,1000);
+        ctx.lineTo(1180,1000);
+        ctx.lineTo(1180,700);
+        ctx.fillStyle = "#E3E3DD";
+        ctx.fill();
+        ctx.stroke();
+       ///สี่เหลี่ยมซ้าย
+        ctx.beginPath();
+        ctx.moveTo(710,700);
+        ctx.lineTo(390,700);
+        ctx.lineTo(390,1000);
+        ctx.lineTo(710,1000);
+        ctx.lineTo(710,700);
+        ctx.fillStyle = "#E3E3DD";
+        ctx.fill();
+        ctx.stroke();
+        ///บล็อกสี่เหลี่ยม
+        ctx.beginPath();
+        ctx.moveTo(390, 700);
+        ctx.lineTo(390, 670);
+        ctx.lineTo(422,670);
+        ctx.lineTo(422,700);
+        ctx.fillStyle= '#F1C40F';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(422, 690, 32, 10);
+        ctx.fillStyle = '#F1C40F';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(454, 700);
+        ctx.lineTo(454, 670);
+        ctx.lineTo(486,670);
+        ctx.lineTo(486,700);
+        ctx.fillStyle= '#F1C40F';
+        ctx.fill();
+        ctx.stroke();
+       
+        ctx.beginPath();
+        ctx.rect(486, 690, 32, 10);
+        ctx.fillStyle = '#F1C40F';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(518, 700);
+        ctx.lineTo(518, 670);
+        ctx.lineTo(550,670);
+        ctx.lineTo(550,700);
+        ctx.fillStyle= '#F1C40F';
+        ctx.fill();
+        ctx.stroke();
+       
+        ctx.beginPath();
+        ctx.rect(550, 690, 32, 10);
+        ctx.fillStyle = '#F1C40F';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(582, 700);
+        ctx.lineTo(582, 670);
+        ctx.lineTo(614,670);
+        ctx.lineTo(614,700);
+        ctx.fillStyle= '#F1C40F';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(614, 690, 32, 10);
+        ctx.fillStyle = '#F1C40F';
+        ctx.fill();
+        ctx.stroke();
+       
+        ctx.beginPath();
+        ctx.moveTo(646, 700);
+        ctx.lineTo(646, 670);
+        ctx.lineTo(678,670);
+        ctx.lineTo(678,700);
+        ctx.fillStyle= '#F1C40F';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(678, 690, 32, 10);
+        ctx.fillStyle = '#F1C40F';
+        ctx.fill();
+        ctx.stroke();
+
+        ///บล็อกสี่เหลี่ยมปราสาท ขวา
+       
+        ///บล็อกปราสาท ขวา
+        ///สี่เหลี่ยมขวา
+        //หูแมว
+        ctx.beginPath();
+        ctx.moveTo(1390, 400);
+        ctx.lineTo(1400, 380);
+        ctx.lineTo(1300, 425);
+        ctx.fillStyle = '#A1CFF8';
+        ctx.fill();
+        ctx.stroke();
+        ///สามเหลี่ยมหูแมว
+        ctx.beginPath();
+        ctx.moveTo(1270, 385);
+        ctx.lineTo(1310, 400);
+        ctx.lineTo(1320, 450);
+        ctx.fillStyle = '#AFCFF8'
+        ctx.fill();
+        ctx.stroke();
+
+
+        
+        //ฐานหัวแมว        
+        ctx.beginPath();
+        ctx.moveTo(1250, 700);
+        ctx.lineTo(1430, 700);
+        ctx.lineTo(1380, 450);
+        ctx.lineTo(1300, 450);
+        ctx.fillStyle = '#D4E6F1'
+        ctx.fill();
+        ctx.stroke();
+
+
+        //ฐานสี่เหลี่ยมที่วางหัวแมว
+        ctx.beginPath();
+        ctx.moveTo(1250, 450);
+        ctx.lineTo(1430, 450);
+        ctx.lineTo(1430, 500);
+        ctx.lineTo(1250, 500);
+        ctx.fillStyle = '#D4E6F1';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(1290, 500, 100, 5);
+        ctx.fillStyle = 'yellow';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(1270, 600, 140, 5);
+        ctx.fillStyle = 'yellow';
+        ctx.fill();
+        ctx.stroke();
+
+        layer1.beginPath();
+        layer1.arc(1340, 480, 20, 0, 2*Math.PI, 0);
+        layer1.fillStyle = 'rgba(255, 255, 135, 1)';
+        layer1.fill();
+
+        layer1.beginPath();
+        layer1.arc(1340, 480, 5, 0, 2*Math.PI, 0);
+        layer1.fillStyle = 'black';
+        layer1.fill();
+        
+        ///ครึ่งวงกลมหัวแมว
+        ctx.beginPath();
+        ctx.arc(1340, 450, 70, 0, 1*Math.PI, 1);
+        ctx.fillStyle = 'pink';
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(1340, 450, 50, 0, 1*Math.PI, 1);
+        ctx.fillStyle = 'rgb(238, 130, 238)';
+        ctx.fill();
+        ///วงกลมตาแมว
+        layer1.beginPath();
+        layer1.arc(1320, 420, 10, 0, 2*Math.PI, 0);
+        layer1.fillStyle = 'rgba(255, 255, 135, 1)';
+        layer1.fill();
+
+        layer1.beginPath();
+        layer1.arc(1320, 420, 5, 0, 2*Math.PI, 0);
+        layer1.fillStyle = 'black';
+        layer1.fill();
+        
+        layer1.beginPath();
+        layer1.arc(1370, 420, 10, 0, 2 * Math.PI, 0);
+        layer1.fillStyle = 'rgba(255, 255, 135, 1)';
+        layer1.fill();
+
+        layer1.beginPath();
+        layer1.arc(1370, 420, 5, 0, 2 * Math.PI, 0);
+        layer1.fillStyle = 'black';
+        layer1.fill();
+
+       
+        ctx.beginPath();
+        ctx.moveTo(1500, 600);
+        ctx.lineTo(1500, 1000);
+        ctx.lineTo(1600, 1000);
+        ctx.lineTo(1600, 600);
+        ctx.lineTo(1500, 600);
+        ctx.fillStyle = '#D4E6F1';
+        ctx.fill();
+        ctx.stroke();
+        
+        ctx.beginPath();
+        ctx.moveTo(1500, 700);
+        ctx.lineTo(1500, 670);
+        ctx.lineTo(1468,670);
+        ctx.lineTo(1468,700);
+        ctx.fillStyle= '#F1C40F';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(1436, 690, 32, 10);
+        ctx.fillStyle = '#F1C40F';
+        ctx.fill();
+        ctx.stroke();
+
+
+        ctx.beginPath();
+        ctx.moveTo(1436, 700);
+        ctx.lineTo(1436, 670);
+        ctx.lineTo(1404,670);
+        ctx.lineTo(1404,700);
+        ctx.fillStyle= '#F1C40F';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(1372, 690, 32, 10);
+        ctx.fillStyle = '#F1C40F';
+        ctx.fill();
+        ctx.stroke();
+       
+        ctx.beginPath();
+        ctx.moveTo(1372, 700);
+        ctx.lineTo(1372, 670);
+        ctx.lineTo(1340,670);
+        ctx.lineTo(1340,700);
+        ctx.fillStyle= '#F1C40F';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(1308, 690, 32, 10);
+        ctx.fillStyle = '#F1C40F';
+        ctx.fill();
+        ctx.stroke();
+        
+        ctx.beginPath();
+        ctx.moveTo(1308, 700);
+        ctx.lineTo(1308, 670);
+        ctx.lineTo(1276,670);
+        ctx.lineTo(1276,700);
+        ctx.fillStyle= '#F1C40F';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(1244, 690, 32, 10);
+        ctx.fillStyle = '#F1C40F';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(1244, 700);
+        ctx.lineTo(1244, 670);
+        ctx.lineTo(1212,670);
+        ctx.lineTo(1212,700);
+        ctx.fillStyle= '#F1C40F';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(1180, 690, 32, 10);
+        ctx.fillStyle = '#F1C40F';
+        ctx.fill();
+        ctx.stroke();
+        
+        
+        //สี่เหลรายวซ้าย
+        ctx.beginPath();
+        ctx.moveTo(390, 600);
+        ctx.lineTo(390, 1000);
+        ctx.lineTo(290, 1000);
+        ctx.lineTo(290, 600);
+        ctx.lineTo(390, 600);
+        ctx.fillStyle = '#D4E6F1';
+        ctx.fill();
+        ctx.stroke();
+        ///เพดานขวา
+        ctx.beginPath();
+        ctx.moveTo(1610, 590);
+        ctx.lineTo(1610, 600);
+        ctx.lineTo(1490, 600);
+        ctx.lineTo(1490, 590);
+        ctx.lineTo(1610, 590);
+        ctx.fillStyle = '#E74C3C'
+        ctx.fill();
+        ctx.stroke();
+        //ฐาน
+        ctx.beginPath();
+        ctx.moveTo(1620, 580);
+        ctx.lineTo(1620, 590);
+        ctx.lineTo(1480, 590);
+        ctx.lineTo(1480, 580);
+        ctx.lineTo(1620, 580);
+        ctx.fillStyle = '#F1C40F'
+        ctx.fill();
+        ctx.stroke();
+        //สามเหลี่ยม
+        ctx.beginPath();
+        ctx.moveTo(1480, 560);
+        ctx.lineTo(1550, 400);
+        ctx.lineTo(1620, 560);
+        ctx.fillStyle = '#17A589';
+        ctx.fill();
+        ctx.stroke();
+        //สี่เหลี่ยมเล็กเติมสี
+        ctx.beginPath();
+        ctx.moveTo(1640, 560);
+        ctx.lineTo(1620, 580);
+        ctx.lineTo(1480, 580);
+        ctx.lineTo(1460, 560);
+        ctx.fillStyle = '#17A589';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(1525, 460, 15, 5);
+        ctx.fillStyle = 'white';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(1550, 500, 15, 5);
+        ctx.fillStyle = 'white';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(1560, 520, 15, 5);
+        ctx.fillStyle = 'white';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(1520, 520, 15, 5);
+        ctx.fillStyle = 'white';
+        ctx.fill();
+        ctx.stroke();
+        
+        ctx.beginPath();
+        ctx.moveTo(270, 560);
+        ctx.lineTo(340, 400);
+        ctx.lineTo(410, 560);
+        ctx.fillStyle = '#17A589';
+        ctx.fill();
+        ctx.stroke();
+        //สี่เหลี่ยมเล็กเติมสี
+        ctx.beginPath();
+        ctx.moveTo(270, 560);
+        ctx.lineTo(270, 580);
+        ctx.lineTo(410, 580);
+        ctx.lineTo(410, 560);
+        ctx.fillStyle = '#17A589';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(315, 460, 15, 5);
+        ctx.fillStyle = 'white';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(350, 500, 15, 5);
+        ctx.fillStyle = 'white';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(354, 520, 15, 5);
+        ctx.fillStyle = 'white';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(330, 520, 15, 5);
+        ctx.fillStyle = 'white';
+        ctx.fill();
+        ctx.stroke();
+        
+
+        //ฐานแฉก
+        ctx.beginPath();
+        ctx.moveTo(1640, 560);
+        ctx.lineTo(1620, 580);
+        ctx.lineTo(1480, 580);
+        ctx.lineTo(1460, 560);
+        ctx.lineTo(1500, 560);
+        ctx.lineTo(1520, 580);
+        ctx.lineTo(1540, 580);
+        ctx.lineTo(1540, 560);
+        ctx.lineTo(1560, 560);
+        ctx.lineTo(1560, 580);
+        ctx.lineTo(1580, 580);
+        ctx.lineTo(1600, 560);
+        ctx.fillStyle = '#F1C40F'
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(280, 590);
+        ctx.lineTo(280, 600);
+        ctx.lineTo(400, 600);
+        ctx.lineTo(400, 590);
+        ctx.lineTo(280, 590);
+        ctx.fillStyle = '#E74C3C'
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(270, 580);
+        ctx.lineTo(270, 590);
+        ctx.lineTo(410, 590);
+        ctx.lineTo(410, 580);
+        ctx.lineTo(270, 580);
+        ctx.fillStyle = '#F1C40F'
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(270, 580);
+        ctx.lineTo(250, 560);
+        ctx.lineTo(290, 560)
+        ctx.lineTo(310, 580);
+        ctx.lineTo(330, 580);
+        ctx.lineTo(330, 560);
+        ctx.lineTo(350, 560);
+        ctx.lineTo(350, 580);
+        ctx.lineTo(370, 580);
+        ctx.lineTo(390, 560);
+        ctx.lineTo(430, 560);
+        ctx.lineTo(410, 580);
+        //ctx.lineTo(1600, 560);
+        ctx.fillStyle = '#F1C40F';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(290, 700, 100, 10);
+        ctx.fillStyle = '#F1C40F';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(290, 900, 100, 10);
+        ctx.fillStyle = '#F1C40F';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(1500, 700, 100, 10);
+        ctx.fillStyle = '#F1C40F';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(1500, 900, 100, 10);
+        ctx.fillStyle = '#F1C40F';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(330, 750, 20, 50);
+        ctx.fillStyle = 'black';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(1540, 750, 20, 50);
+        ctx.fillStyle = 'black';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(400, 750, 50, 10);
+        ctx.fillStyle = 'white';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(450, 850, 50, 10);
+        ctx.fillStyle = 'white';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(600, 750, 50, 10);
+        ctx.fillStyle = 'white';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(1400, 750, 50, 10);
+        ctx.fillStyle = 'white';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(1200, 800, 50, 10);
+        ctx.fillStyle = 'white';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(1300, 850, 50, 10);
+        ctx.fillStyle = 'white';
+        ctx.fill();
+        ctx.stroke();
+
+
+
+
+
+        
+
+        
+        
+        //บล็อค
+        
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(813, 545, 48, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(865, 545, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(920, 545, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(975, 545, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(1030, 545, 45 , 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(813, 570, 30, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(848, 570, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(903, 570, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(958, 570, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(1013, 570, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(1068, 570, 7, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+        //แยกชั้น
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(813, 595, 48, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(865, 595, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(920, 595, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(975, 595, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(1030, 595, 45, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+        //แยกชั้น
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(813, 620, 30, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(848, 620, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(903, 620, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(958, 620, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(1013, 620, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(1068, 620, 7, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+        //แยกชั้น
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(813, 645, 48, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(865, 645, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(920, 645, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(975, 645, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(1030, 645, 45, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+        //แยกชั้น
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(813, 670, 30, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(848, 670, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(903, 670, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(958, 670, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(1013, 670, 50, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.rect(1068, 670, 7, 20);
+        ctx.stroke();
+        ctx.fillStyle = '#E3E3DD'
+        ctx.fill();
+        //แยกชั้น
+
+        //แยกชั้น
+
+
+
+
+        ///เงา
+        /***ctx.beginPath();
+        ctx.moveTo(810, 540);
+        ctx.quadraticCurveTo(1080, 520, 1080, 1000);
+        ctx.lineTo(1080, 540);
+        ctx.lineTo(810, 540);
+        ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0)';
+        ctx.stroke();
+        ctx.fill();
+***/
+        layer1.beginPath();
+        layer1.arc(945, 790, 60, 0, 1 * Math.PI, 1);
+        layer1.stroke();
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.4)';
+        layer1.fillStyle = 'rgba(255, 70, 70, 0.5)';
+        layer1.fill();
+        
+        layer1.beginPath();
+        layer1.arc(980, 900, 10, 0, 2* Math.PI, 0);
+        layer1.stroke();
+        layer1.fillStyle = 'rgba(255, 70, 70, 0.5)';
+        layer1.fill();
+
+        layer1.beginPath();
+        layer1.arc(910, 900, 10, 0, 2 * Math.PI, 0);
+        layer1.stroke();
+        layer1.fillStyle = 'rgba(255, 70, 70, 0.5)';
+        layer1.fill();
+
+
+
+
+        
+
+/**
+        ctx.beginPath();
+        ctx.moveTo(100, 200);
+        ctx.lineTo(200, 200);
+        ctx.lineTo(100, 300);
+        ctx.fillStyle = '#663f';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(200, 200, 50, 0, 2 * Math.PI);
+        ctx.stroke();
+        ctx.fillStyle = 'pink';
+        ctx.fill();
+**/
+        
+
+    </script>
+</body>
+</html>
